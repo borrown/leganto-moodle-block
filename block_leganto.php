@@ -169,7 +169,8 @@ class block_leganto extends block_base {
             CURLOPT_HEADER         => false,
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_CONNECTTIMEOUT => 20,
-            CURLOPT_HTTP_VERSION      => CURL_HTTP_VERSION_1_1,
+            CURLOPT_HTTP_VERSION   => CURL_HTTP_VERSION_1_1,
+	    CURLOPT_SSLVERSION     => 6,
             CURLOPT_HTTPHEADER     => $header
         );
 
